@@ -11,6 +11,7 @@ export const ThemeContextProvider = ({ children }) => {
     console.log("Updated theme", theme === "light" ? "light" : "dark");
     setTheme(theme === "light" ? "dark" : "light");
   };
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}

@@ -1,6 +1,7 @@
 export const darkTheme = {
   colors: {
     primary: "#202124",
+    modalBackground: "#202124",
     secondary: "#F6F1EB",
     tertiary: "#ACA84A",
     default: "#BCC1C7",
@@ -33,6 +34,7 @@ export const darkTheme = {
 export const lightTheme = {
   colors: {
     primary: "#F6F1EB",
+    modalBackground: "#F6F1EB",
     secondary: "#202124",
     tertiary: "#3D3D3D",
     default: "#BCC1C7",

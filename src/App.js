@@ -9,6 +9,7 @@ const App = () => {
   const { theme } = useContext(ThemeContext);
 
   const mode = theme === "light" ? lightTheme : darkTheme;
+
   return (
     <ThemeProvider theme={mode}>
       <GlobalStyles />

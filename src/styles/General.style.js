@@ -7,7 +7,9 @@ export const Container = styled.div`
   flex-direction: column;
   height: 80vh;
   width: 100vw;
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${(props) => {
+    return props.theme.colors.primary;
+  }};
   padding: 0 1rem;
   text-align: center;
 `;
@@ -24,7 +26,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.h1`
   color: ${(props) => {
     return props.theme.colors.text;
-  }};
+  }};z
   font-size: 1.5rem;
   font-weight: 200;
   background-color: transparent;

@@ -9,16 +9,16 @@ export const checkForWinner = (board) => {
 
   // rows
   for (let i = 0; i < 9; i += 3) {
-    if (checkForSequence(board[i], board[1 + i], board[1 + 2])) {
+    if (checkForSequence(board[i], board[i + 1], board[i + 2])) {
       console.log("Row winner");
       return true;
     }
   }
 
-  // rows
-  for (let i = 0; i < 9; i += 3) {
-    if (checkForSequence(board[1], board[1 + i], board[1 + 2])) {
-      console.log("Row winner");
+  // columns
+  for (let i = 0; i < 3; i += 1) {
+    if (checkForSequence(board[i], board[i + 3], board[i + 6])) {
+      console.log("Column winner");
       return true;
     }
   }
