@@ -22,7 +22,11 @@ export const ModalContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: ${({ theme }) => theme.colors.modalBackground};
+  color: ${({ theme }) => theme.colors.ModalBackground};
+  ${(props) => props.theme.media.mobile} {
+    min-width: 200px;
+    padding: 20px 10px;
+  }
 `;
 
 export const ModalHeader = styled.div`
