@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import Game from "./pages/Game/Game";
 import Details from "./pages/Details/Details";
 import Home from "./pages/Home/Home";
