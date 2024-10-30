@@ -39,7 +39,7 @@ const MusicPlayer = () => {
   return (
     <MusicPlayerWrapper>
       {isPlaying ? (
-        <PauseIcon
+        <PauseIcon 
           onClick={() => {
             clickSfx();
             setIsPlaying(false);
